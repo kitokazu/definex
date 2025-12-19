@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Noto_Sans_JP, Oswald } from "next/font/google";
+import { Montserrat, Noto_Sans_JP, Oswald } from "next/font/google";
 import "./globals.css";
 
 const notoSansJP = Noto_Sans_JP({
@@ -16,6 +16,14 @@ const oswald = Oswald({
   display: "swap",
 });
 
+const montserrat = Montserrat({
+  subsets: ["latin"],
+  variable: "--font-montserrat",
+  weight: ["400", "600", "700", "800", "900"],
+  style: ["normal", "italic"],
+  display: "swap",
+});
+
 export const metadata: Metadata = {
   title: "DEFINE X - Corporate Site",
   description:
@@ -29,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
-      <body className={`${notoSansJP.variable} ${oswald.variable} antialiased`}>
+      <body className={`${notoSansJP.variable} ${oswald.variable} ${montserrat.variable} antialiased`}>
         {children}
       </body>
     </html>

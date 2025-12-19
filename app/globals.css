@@ -17,6 +17,13 @@
       sans-serif
     );
   --font-display: var(--font-oswald, "Oswald", "Noto Sans JP", sans-serif);
+  --font-eng: var(
+      --font-montserrat,
+      "Montserrat",
+      var(--font-oswald),
+      "Noto Sans JP",
+      sans-serif
+    );
 }
 
 :root {
@@ -33,6 +40,21 @@ body {
   background-image: radial-gradient(#ffffff 1px, transparent 1px);
   background-size: 40px 40px;
   opacity: 0.1;
+}
+
+.bg-grid-pattern-compact {
+  background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+  background-size: 20px 20px;
+}
+
+.bg-stripe-pattern {
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    rgba(0, 175, 204, 0.05) 10px,
+    rgba(0, 175, 204, 0.05) 20px
+  );
 }
 
 .clip-diagonal {
@@ -113,4 +135,22 @@ body {
   50% {
     opacity: 0.8;
   }
+}
+
+.animate-marquee {
+  animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.font-eng,
+.eng-font {
+  font-family: var(--font-eng);
 }
