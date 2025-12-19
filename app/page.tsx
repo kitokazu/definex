@@ -1,20 +1,17 @@
-import React from "react";
+import type { Metadata } from "next";
 import {
-  CheckCircle2,
-  Trophy,
-  Globe,
   Brain,
+  CheckCircle2,
+  Globe,
   MessageCircle,
-  Star,
-  UserCheck,
-  Target,
   Quote,
+  Star,
+  Target,
+  Trophy,
+  UserCheck,
   Zap,
-  Play,
 } from "lucide-react";
 import { CtaButton } from "./components/CtaButton";
-
-// --- Assets & Data ---
 
 const FEATURES = [
   {
@@ -63,7 +60,15 @@ const TESTIMONIALS = [
   },
 ];
 
-const App: React.FC = () => {
+export const metadata: Metadata = {
+  title: "DEFINE ACADEMY | スポーツ × 英会話",
+  description:
+    "スポーツ好きのための英会話。英語がもっと身近に、もっと楽しく。DEFINE ACADEMYの公式ランディングページ。",
+};
+
+export default function LandingPage() {
+  const currentYear = new Date().getFullYear();
+
   return (
     <div className="min-h-screen bg-brand-dark text-white font-sans selection:bg-brand-primary selection:text-white overflow-x-hidden">
       {/* --- HEADER --- */}
@@ -134,12 +139,8 @@ const App: React.FC = () => {
                 ))}
               </div>
               <div>
-                <p className="text-white font-bold text-sm">
-                  Join our Community
-                </p>
-                <p className="text-xs text-brand-primary">
-                  多くのアスリート・学生が参加中
-                </p>
+                <p className="text-white font-bold text-sm">Join our Community</p>
+                <p className="text-xs text-brand-primary">多くのアスリート・学生が参加中</p>
               </div>
             </div>
           </div>
@@ -218,9 +219,7 @@ const App: React.FC = () => {
                   <h3 className="text-xl font-bold text-white mb-4 group-hover:text-brand-primary transition-colors">
                     {item.title}
                   </h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">
-                    {item.desc}
-                  </p>
+                  <p className="text-slate-400 text-sm leading-relaxed">{item.desc}</p>
                 </div>
               </div>
             ))}
@@ -230,9 +229,7 @@ const App: React.FC = () => {
             <div className="inline-block relative">
               <div className="absolute inset-0 bg-brand-primary transform skew-x-[-12deg] blur-sm opacity-50"></div>
               <div className="relative bg-brand-primary text-brand-dark font-bold font-display italic text-2xl md:text-3xl py-4 px-12 rounded-lg transform skew-x-[-12deg] shadow-[0_0_20px_rgba(0,175,204,0.6)]">
-                <span className="block transform skew-x-[12deg]">
-                  その悩み、すべて解決します。
-                </span>
+                <span className="block transform skew-x-[12deg]">その悩み、すべて解決します。</span>
               </div>
             </div>
           </div>
@@ -267,24 +264,16 @@ const App: React.FC = () => {
               Our Solution
             </span>
             <h2 className="text-4xl md:text-6xl font-black text-white mt-2 font-display italic uppercase">
-              Sports{" "}
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-white">
-                ×
-              </span>{" "}
-              English
+              Sports <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-white">×</span> English
             </h2>
-            <p className="text-slate-400 mt-4 text-lg">
-              スポーツをテーマにした英語学習という新しい答え
-            </p>
+            <p className="text-slate-400 mt-4 text-lg">スポーツをテーマにした英語学習という新しい答え</p>
           </div>
 
           <div className="space-y-24">
             {FEATURES.map((feature, idx) => (
               <div
                 key={idx}
-                className={`flex flex-col md:flex-row items-center gap-12 ${
-                  idx % 2 !== 0 ? "md:flex-row-reverse" : ""
-                }`}
+                className={`flex flex-col md:flex-row items-center gap-12 ${idx % 2 !== 0 ? "md:flex-row-reverse" : ""}`}
               >
                 <div className="w-full md:w-1/2 relative group">
                   <div className="absolute inset-0 bg-brand-primary rounded-2xl transform translate-x-3 translate-y-3 group-hover:translate-x-2 group-hover:translate-y-2 transition-transform"></div>
@@ -304,9 +293,7 @@ const App: React.FC = () => {
 
                 <div className="w-full md:w-1/2">
                   <h3 className="text-3xl font-bold font-display italic text-white mb-6">
-                    <span className="text-brand-primary text-4xl mr-2">
-                      0{idx + 1}.
-                    </span>
+                    <span className="text-brand-primary text-4xl mr-2">0{idx + 1}.</span>
                     {feature.title}
                   </h3>
                   <p className="text-slate-300 text-lg leading-relaxed border-l-2 border-brand-primary/30 pl-6">
@@ -330,12 +317,8 @@ const App: React.FC = () => {
 
               <div className="relative z-10 p-10 md:p-16 flex flex-col md:flex-row items-center justify-between gap-10 text-center md:text-left">
                 <div className="flex-1">
-                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">
-                    まずは無料体験で実感してください
-                  </h3>
-                  <p className="text-slate-300 text-lg">
-                    あなたの好きなスポーツについて、英語で語り合いましょう。
-                  </p>
+                  <h3 className="text-3xl md:text-4xl font-bold text-white mb-4">まずは無料体験で実感してください</h3>
+                  <p className="text-slate-300 text-lg">あなたの好きなスポーツについて、英語で語り合いましょう。</p>
                 </div>
                 <div className="flex-shrink-0">
                   <a
@@ -358,12 +341,8 @@ const App: React.FC = () => {
       <section className="py-24 px-4 bg-brand-dark relative border-y border-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="font-display italic text-4xl md:text-5xl font-bold text-white mb-4">
-              INSTRUCTOR
-            </h2>
-            <p className="text-slate-400">
-              実績あるプロフェッショナルがサポート
-            </p>
+            <h2 className="font-display italic text-4xl md:text-5xl font-bold text-white mb-4">INSTRUCTOR</h2>
+            <p className="text-slate-400">実績あるプロフェッショナルがサポート</p>
           </div>
 
           <div className="flex flex-col lg:flex-row items-center gap-12">
@@ -377,19 +356,11 @@ const App: React.FC = () => {
                   className="w-full h-[500px] object-cover"
                 />
                 <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-black/80 to-transparent p-8">
-                  <p className="text-brand-primary font-bold tracking-widest uppercase text-sm mb-1">
-                    Head Coach
-                  </p>
-                  <h3 className="text-4xl font-bold font-display italic text-white uppercase">
-                    Ken Suzuki
-                  </h3>
+                  <p className="text-brand-primary font-bold tracking-widest uppercase text-sm mb-1">Head Coach</p>
+                  <h3 className="text-4xl font-bold font-display italic text-white uppercase">Ken Suzuki</h3>
                   <div className="flex gap-4 mt-4">
-                    <div className="bg-white/20 backdrop-blur px-3 py-1 rounded text-xs font-bold text-white border border-white/10">
-                      IMG Academy
-                    </div>
-                    <div className="bg-white/20 backdrop-blur px-3 py-1 rounded text-xs font-bold text-white border border-white/10">
-                      TOEIC 985
-                    </div>
+                    <div className="bg-white/20 backdrop-blur px-3 py-1 rounded text-xs font-bold text-white border border-white/10">IMG Academy</div>
+                    <div className="bg-white/20 backdrop-blur px-3 py-1 rounded text-xs font-bold text-white border border-white/10">TOEIC 985</div>
                   </div>
                 </div>
               </div>
@@ -400,28 +371,17 @@ const App: React.FC = () => {
               <h3 className="text-2xl md:text-3xl font-bold text-white leading-relaxed mb-8">
                 「英語は勉強科目ではなく、
                 <br />
-                <span className="text-brand-primary">
-                  スポーツを楽しむための最強のツール
-                </span>
-                です。」
+                <span className="text-brand-primary">スポーツを楽しむための最強のツール</span>です。」
               </h3>
 
               <div className="grid md:grid-cols-2 gap-4 mb-8">
                 <div className="bg-white/5 border border-white/10 p-5 rounded-xl">
-                  <p className="text-xs text-slate-400 uppercase font-bold mb-2">
-                    Language
-                  </p>
-                  <p className="font-bold text-xl text-white">
-                    日本語 / English
-                  </p>
+                  <p className="text-xs text-slate-400 uppercase font-bold mb-2">Language</p>
+                  <p className="font-bold text-xl text-white">日本語 / English</p>
                 </div>
                 <div className="bg-white/5 border border-white/10 p-5 rounded-xl">
-                  <p className="text-xs text-slate-400 uppercase font-bold mb-2">
-                    Score
-                  </p>
-                  <p className="font-bold text-xl text-brand-primary font-display">
-                    TOEIC 985 / VERSANT 79
-                  </p>
+                  <p className="text-xs text-slate-400 uppercase font-bold mb-2">Score</p>
+                  <p className="font-bold text-xl text-brand-primary font-display">TOEIC 985 / VERSANT 79</p>
                 </div>
               </div>
 
@@ -491,20 +451,14 @@ const App: React.FC = () => {
                 className="relative group rounded-2xl p-[1px] bg-gradient-to-b from-white/20 to-transparent hover:from-brand-primary hover:to-brand-primary/50 transition-all duration-300"
               >
                 <div className="bg-[#1e293b] rounded-2xl p-8 h-full relative overflow-hidden">
-                  <div
-                    className={`absolute top-0 right-0 w-32 h-32 opacity-10 rounded-bl-full ${benefit.bg}`}
-                  ></div>
+                  <div className={`absolute top-0 right-0 w-32 h-32 opacity-10 rounded-bl-full ${benefit.bg}`}></div>
                   <div
                     className={`w-14 h-14 rounded-xl ${benefit.bg} flex items-center justify-center mb-6 shadow-lg transform group-hover:rotate-12 transition-transform`}
                   >
                     {benefit.icon}
                   </div>
-                  <h3 className="text-xl font-bold text-white mb-4">
-                    {benefit.title}
-                  </h3>
-                  <p className="text-slate-400 text-sm leading-relaxed">
-                    {benefit.desc}
-                  </p>
+                  <h3 className="text-xl font-bold text-white mb-4">{benefit.title}</h3>
+                  <p className="text-slate-400 text-sm leading-relaxed">{benefit.desc}</p>
                 </div>
               </div>
             ))}
@@ -545,12 +499,8 @@ const App: React.FC = () => {
                     {service.icon}
                   </div>
                   <div>
-                    <h3 className="text-xl font-bold text-white mb-3">
-                      {service.title}
-                    </h3>
-                    <p className="text-slate-400 leading-relaxed">
-                      {service.desc}
-                    </p>
+                    <h3 className="text-xl font-bold text-white mb-3">{service.title}</h3>
+                    <p className="text-slate-400 leading-relaxed">{service.desc}</p>
                   </div>
                 </div>
               ))}
@@ -563,9 +513,7 @@ const App: React.FC = () => {
       <section className="py-24 px-4 bg-[#0F172A] relative">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 font-display italic">
-              VOICE
-            </h2>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-4 font-display italic">VOICE</h2>
             <p className="text-slate-400">受講生の声</p>
           </div>
 
@@ -581,9 +529,7 @@ const App: React.FC = () => {
                     {t.role.charAt(0)}
                   </div>
                   <div>
-                    <p className="text-xs text-brand-primary font-bold uppercase tracking-wider mb-1">
-                      Student
-                    </p>
+                    <p className="text-xs text-brand-primary font-bold uppercase tracking-wider mb-1">Student</p>
                     <p className="text-sm text-white font-bold">{t.role}</p>
                     <div className="flex text-brand-accent mt-1">
                       {[...Array(5)].map((_, i) => (
@@ -592,12 +538,8 @@ const App: React.FC = () => {
                     </div>
                   </div>
                 </div>
-                <p className="text-white font-bold text-lg mb-3">
-                  {t.highlight}
-                </p>
-                <p className="text-slate-400 text-sm leading-relaxed">
-                  {t.text}
-                </p>
+                <p className="text-white font-bold text-lg mb-3">&ldquo;{t.highlight}&rdquo;</p>
+                <p className="text-slate-400 text-sm leading-relaxed">{t.text}</p>
               </div>
             ))}
           </div>
@@ -630,14 +572,8 @@ const App: React.FC = () => {
           </p>
 
           <div className="flex flex-col items-center">
-            <CtaButton
-              text="LINEで無料体験を受ける"
-              subText="特典：初回カウンセリング無料"
-              className="w-full max-w-lg"
-            />
-            <p className="mt-6 text-xs text-slate-500">
-              ※定員になり次第、無料体験の受付を終了する場合がございます。
-            </p>
+            <CtaButton text="LINEで無料体験を受ける" subText="特典：初回カウンセリング無料" className="w-full max-w-lg" />
+            <p className="mt-6 text-xs text-slate-500">※定員になり次第、無料体験の受付を終了する場合がございます。</p>
           </div>
         </div>
       </section>
@@ -664,9 +600,7 @@ const App: React.FC = () => {
             </a>
           </div>
 
-          <div className="text-xs">
-            &copy; {new Date().getFullYear()} DEFINE ACADEMY.
-          </div>
+          <div className="text-xs">&copy; {currentYear} DEFINE ACADEMY.</div>
         </div>
       </footer>
 
@@ -684,6 +618,4 @@ const App: React.FC = () => {
       </div>
     </div>
   );
-};
-
-export default App;
+}

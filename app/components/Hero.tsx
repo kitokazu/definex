@@ -35,7 +35,7 @@ const Hero: React.FC = () => {
 
             <FadeIn delay={300}>
               <p className="text-2xl md:text-4xl font-black text-slate-500 italic mb-6 tracking-tight">
-                "Sports Meets Education"
+                &ldquo;Sports Meets Education&rdquo;
               </p>
               <div className="pl-6 border-l-4 border-slate-700">
                 <p className="text-base md:text-lg text-slate-300 leading-relaxed max-w-lg font-bold">
