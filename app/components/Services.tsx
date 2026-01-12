@@ -1,10 +1,14 @@
-import React from 'react';
-import { Activity, ArrowUpRight, Lock } from 'lucide-react';
-import FadeIn from './FadeIn';
+import React from "react";
+import { Activity, ArrowUpRight, Lock } from "lucide-react";
+import Image from "next/image";
+import FadeIn from "./FadeIn";
 
 const Services: React.FC = () => {
   return (
-    <section id="services" className="py-24 bg-slate-950 relative overflow-hidden text-white">
+    <section
+      id="services"
+      className="py-24 bg-slate-950 relative overflow-hidden text-white"
+    >
       <div className="absolute inset-0 bg-grid-pattern opacity-[0.08] pointer-events-none" />
       <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-t from-slate-950 to-transparent pointer-events-none" />
 
@@ -15,7 +19,9 @@ const Services: React.FC = () => {
               OUR SERVICES
             </h2>
             <div className="h-1 bg-brand w-24 skew-x-[-20deg] shadow-[0_0_10px_#00AFCC]"></div>
-            <p className="text-slate-500 font-bold tracking-widest uppercase text-sm">Private / Sports / Community</p>
+            <p className="text-slate-500 font-bold tracking-widest uppercase text-sm">
+              Sports / Community
+            </p>
           </div>
         </FadeIn>
 
@@ -35,23 +41,38 @@ const Services: React.FC = () => {
                       <div className="w-10 h-10 bg-brand text-white flex items-center justify-center font-bold text-xl skew-x-[-12deg] shadow-[0_0_10px_rgba(0,175,204,0.5)]">
                         <span className="skew-x-[12deg]">01</span>
                       </div>
-                      <span className="text-slate-400 font-bold tracking-widest uppercase text-sm">Academy Business</span>
+                      <span className="text-slate-400 font-bold tracking-widest uppercase text-sm">
+                        Academy Business
+                      </span>
                     </div>
 
                     <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
                       スポーツ英会話 <br />
-                      <span className="text-brand italic text-4xl md:text-5xl block mt-1 tracking-tight text-shadow-glow">
-                        DEFINE ACADEMY
-                      </span>
+                      <div className="mt-1">
+                        <Image
+                          src="/define-academy-logo.png"
+                          alt="DEFINE ACADEMY"
+                          width={400}
+                          height={120}
+                          className="h-20 md:h-28 w-auto"
+                          priority
+                        />
+                      </div>
                     </h3>
                     <p className="text-slate-400 text-lg leading-relaxed mb-8 font-medium">
                       スポーツをテーマにしたオンライン英会話レッスン。
                       <br />
-                      現役アスリートやスポーツ愛好家向けに特化し、 ニーズに合わせて効率的・効果的な英語学習をサポートします。
+                      現役アスリートやスポーツ愛好家向けに特化し、
+                      ニーズに合わせて効率的・効果的な英語学習をサポートします。
                     </p>
 
                     <div className="flex flex-wrap gap-3 mb-10">
-                      {['Online', '1-on-1', 'Sports English', 'Custom Curriculum'].map(tag => (
+                      {[
+                        "Online",
+                        "1-on-1",
+                        "Sports English",
+                        "Custom Curriculum",
+                      ].map((tag) => (
                         <span
                           key={tag}
                           className="px-3 py-1 border-l-2 border-brand text-slate-300 text-sm font-bold uppercase tracking-wide bg-slate-800/50"
@@ -65,7 +86,10 @@ const Services: React.FC = () => {
                       <button className="inline-flex items-center px-8 py-4 bg-white text-slate-950 font-bold skew-x-[-12deg] hover:bg-brand hover:text-white transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,175,204,0.6)] hover:-translate-y-1 group/btn">
                         <span className="skew-x-[12deg] flex items-center">
                           公式サイトを見る
-                          <ArrowUpRight size={18} className="ml-2 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />
+                          <ArrowUpRight
+                            size={18}
+                            className="ml-2 group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform"
+                          />
                         </span>
                       </button>
                     </div>
@@ -108,7 +132,9 @@ const Services: React.FC = () => {
                 <div className="relative z-10 p-12 md:p-20 flex flex-col items-center text-center">
                   <div className="mb-6 inline-flex items-center space-x-2 px-4 py-1 border border-brand/50 rounded-full bg-brand/10 backdrop-blur-sm">
                     <Activity size={16} className="text-brand" />
-                    <span className="text-brand text-xs font-bold tracking-widest uppercase">Coming Soon</span>
+                    <span className="text-brand text-xs font-bold tracking-widest uppercase">
+                      Coming Soon
+                    </span>
                   </div>
 
                   <h3 className="text-5xl md:text-7xl font-black text-white mb-6 italic tracking-tighter drop-shadow-md">
@@ -125,7 +151,9 @@ const Services: React.FC = () => {
                     <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
                     <div className="skew-x-[12deg] flex items-center relative z-10">
                       <Lock size={18} className="mr-3 text-slate-500" />
-                      <span className="font-black tracking-widest text-lg">UNDER CONSTRUCTION</span>
+                      <span className="font-black tracking-widest text-lg">
+                        UNDER CONSTRUCTION
+                      </span>
                     </div>
                   </div>
                 </div>
