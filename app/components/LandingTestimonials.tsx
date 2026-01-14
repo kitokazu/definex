@@ -3,22 +3,24 @@ import { Star } from "lucide-react";
 export default function LandingTestimonials() {
   const reviews = [
     {
-      role: "プロサッカー選手 (海外移籍予定)",
-      name: "K.S. 様",
-      content: "移籍交渉の席で、自分の要望を直接伝えられるようになりました。通訳を通すと消えてしまう熱意を、自分の言葉で伝えられたのが大きかったです。",
-      tags: ["実践会話", "メンタル"]
+      role: "ジュニア",
+      name: "保護者",
+      content: "いつもの英語とは違って、自分が頑張ってるスポーツの英会話だったので、とても楽しく取り組めました。来年の夏にアメリカ行くまでに少しでも上達できるようにこれから頑張りたいです。"
     },
     {
-      role: "大学テニス部コーチ",
-      name: "T.M. 様",
-      content: "外国人選手の指導に悩んでいましたが、技術的な指示だけでなく、モチベーションを上げる声かけができるようになりました。",
-      tags: ["指導力", "コーチング"]
+      role: "ジュニア",
+      name: "保護者",
+      content: "オリジナルの工夫満載の楽しいレッスンで、野球という共通話題もできるお兄さんができたみたいで、息子もうれしそうでした!"
     },
     {
-      role: "米国大学留学中",
-      name: "A.Y. 様",
-      content: "チームメイトとのロッカールームでの会話が一番の壁でしたが、スポーツ特有のスラングやジョークを学べたことで、一気に馴染めました。",
-      tags: ["留学準備", "コミュニケーション"]
+      role: "ジュニア",
+      name: "保護者",
+      content: "アメリカの大学へテニスでスカラーシップを得て入学するため、入学までの数か月間で英語力を上達させなければならず、何か良い勉強法はないかなと探していたところ、すごく良い先生に出会うことが出来ました。テニスを通して実際に使う英語を楽しく学べそうです!"
+    },
+    {
+      role: "スポーツ関係者",
+      name: "T.O 様",
+      content: "習い始めて2ヶ月くらいですが、毎回30分のレクチャーがすごく早く感じます。先生はとても発音が綺麗で親切に教えてくれます。とても満足しています。"
     }
   ];
 
@@ -32,7 +34,7 @@ export default function LandingTestimonials() {
           <p className="text-slate-400">受講生の声</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8">
           {reviews.map((review, index) => (
             <div
               key={index}
@@ -56,13 +58,6 @@ export default function LandingTestimonials() {
                 <p className="font-bold text-white">{review.name}</p>
               </div>
               
-              <div className="mt-4 flex flex-wrap gap-2">
-                {review.tags.map((tag, i) => (
-                  <span key={i} className="text-xs bg-white/10 text-slate-300 px-2 py-1 rounded border border-white/20">
-                    #{tag}
-                  </span>
-                ))}
-              </div>
             </div>
           ))}
         </div>
