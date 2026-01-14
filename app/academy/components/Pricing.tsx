@@ -10,7 +10,7 @@ const Pricing: React.FC = () => {
       monthlyPrice: "8,800",
       times: "月2回",
       desc: "まずは気軽に始めたい方へ",
-      features: ["完全個別カリキュラム", "学習カウンセリング", "チャットサポート(限定的)"]
+      features: ["1セッション: 30分", "完全個別カリキュラム", "毎回のフィードバック", "無制限チャットサポート"]
     },
     {
       name: "Standard",
@@ -18,14 +18,14 @@ const Pricing: React.FC = () => {
       times: "月4回",
       recommended: true,
       desc: "着実に力をつけたい推奨プラン",
-      features: ["完全個別カリキュラム", "毎回のフィードバック", "無制限チャットサポート", "留学・進路相談"]
+      features: ["1セッション: 30分", "完全個別カリキュラム", "毎回のフィードバック", "無制限チャットサポート", "留学・進路相談"]
     },
     {
       name: "Athlete Pro",
       monthlyPrice: "35,200",
       times: "月8回",
       desc: "短期間で飛躍的に伸ばす",
-      features: ["完全個別カリキュラム", "詳細フィードバックレポート", "優先予約枠", "模擬インタビュー対策"]
+      features: ["1セッション: 30分", "完全個別カリキュラム", "毎回のフィードバック", "無制限チャットサポート", "優先予約枠", "模擬インタビュー対策"]
     }
   ];
 
@@ -94,6 +94,21 @@ const Pricing: React.FC = () => {
               </div>
             </div>
           ))}
+        </div>
+
+        {/* 3-Month Intensive Plan */}
+        <div className="max-w-2xl mx-auto mt-16">
+          <div className="bg-white text-slate-900 text-center p-8 shadow-lg">
+            <h3 className="text-2xl font-bold text-[#00afcc] mb-6">3ヶ月集中プラン</h3>
+            <div className="space-y-2 mb-6">
+              <p className="text-slate-600">1セッション：30分</p>
+              <p className="text-3xl font-black">120,000円 <span className="text-base font-normal text-slate-500">(税込)</span></p>
+              <p className="text-slate-600">30回券 3ヵ月有効</p>
+            </div>
+            <Button variant="primary" className="!px-8">
+              申し込みはこちら →
+            </Button>
+          </div>
         </div>
 
         {/* Drop-in & Corporate */}

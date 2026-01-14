@@ -1,5 +1,5 @@
 import React from 'react';
-import { Instagram, Twitter } from 'lucide-react';
+import { Instagram, Facebook } from 'lucide-react';
 
 const SNS: React.FC = () => {
   return (
@@ -8,7 +8,7 @@ const SNS: React.FC = () => {
         <h3 className="text-white font-black italic tracking-widest text-2xl mb-10 uppercase">
           Follow Our <span className="text-[#00afcc]">Journey</span>
         </h3>
-        
+
         <div className="flex justify-center items-center gap-6 md:gap-12">
           <a href="#" className="group flex flex-col items-center">
             <div className="w-20 h-20 bg-slate-800 border-2 border-slate-700 transform -skew-x-12 flex items-center justify-center group-hover:bg-[#E1306C] group-hover:border-[#E1306C] transition-all duration-300">
@@ -18,16 +18,15 @@ const SNS: React.FC = () => {
           </a>
 
           <a href="#" className="group flex flex-col items-center">
-            <div className="w-20 h-20 bg-slate-800 border-2 border-slate-700 transform -skew-x-12 flex items-center justify-center group-hover:bg-white group-hover:border-white transition-all duration-300">
-              <Twitter className="text-white group-hover:text-black w-8 h-8 transform skew-x-12" />
+            <div className="w-20 h-20 bg-slate-800 border-2 border-slate-700 transform -skew-x-12 flex items-center justify-center group-hover:bg-[#1877F2] group-hover:border-[#1877F2] transition-all duration-300">
+              <Facebook className="text-white w-8 h-8 transform skew-x-12" />
             </div>
-            <span className="mt-4 text-xs font-bold text-slate-500 group-hover:text-white uppercase tracking-widest">X (Twitter)</span>
+            <span className="mt-4 text-xs font-bold text-slate-500 group-hover:text-white uppercase tracking-widest">Facebook</span>
           </a>
-          
+
           <a href="#" className="group flex flex-col items-center">
              <div className="w-20 h-20 bg-slate-800 border-2 border-slate-700 transform -skew-x-12 flex items-center justify-center group-hover:bg-[#06C755] group-hover:border-[#06C755] transition-all duration-300">
-               {/* LINE Text Placeholder */}
-               <span className="text-white font-black text-2xl transform skew-x-12">L</span>
+               <span className="text-white font-black text-sm transform skew-x-12">LINE</span>
              </div>
              <span className="mt-4 text-xs font-bold text-slate-500 group-hover:text-white uppercase tracking-widest">LINE</span>
           </a>

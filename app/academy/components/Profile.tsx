@@ -3,8 +3,7 @@ import SectionHeading from './SectionHeading';
 import { Award } from 'lucide-react';
 
 const Profile: React.FC = () => {
-  // TODO: Replace with the actual URL of your uploaded Portrait
-  const PORTRAIT_URL = "https://file-service-alpha.internal.based.dev/file/file-service-alpha/156162d1-0f7e-4073-98f5-3c13000554c2";
+  const PORTRAIT_URL = "/taisei-headshot.jpg";
 
   return (
     <section id="profile" className="py-24 bg-white overflow-hidden">
@@ -20,7 +19,7 @@ const Profile: React.FC = () => {
             {/* Image Card */}
             <div className="w-full md:w-1/2 relative group">
                <div className="absolute inset-0 border-4 border-[#00afcc] transform translate-x-4 translate-y-4"></div>
-               <div className="relative bg-slate-900 aspect-[3/4] overflow-hidden grayscale group-hover:grayscale-0 transition-all duration-500 shadow-2xl">
+               <div className="relative bg-slate-900 aspect-[3/4] overflow-hidden transition-all duration-500 shadow-2xl">
                  <img 
                    src={PORTRAIT_URL} 
                    alt="TAISEI KITAHARA" 
@@ -35,7 +34,6 @@ const Profile: React.FC = () => {
             
             <div className="w-full md:w-1/2">
               <div className="mb-8">
-                <span className="text-[#00afcc] font-bold tracking-widest uppercase text-sm mb-2 block">Head Coach / CEO</span>
                 <h3 className="text-4xl font-black text-slate-900 mb-2 italic">北原 大誠</h3>
               </div>
 
@@ -67,9 +65,8 @@ const Profile: React.FC = () => {
               </div>
 
               <div className="relative">
-                <p className="text-xl font-black italic text-slate-900 leading-tight">
-                  「スポーツという共通言語があれば、世界はもっと近くなる。<br/>
-                  あなたの情熱を、英語で世界に届けましょう。」
+                <p className="text-base font-medium text-slate-700 leading-relaxed">
+                  「幼少期より言葉、教育、文化、国籍の違う人と接することが当たり前の環境で過ごしました。そこで感じたのは、違うことが当たり前と思う自分と同じような人もいるけれど、そうではない人も実は多いということです。そんな時、私は「スポーツ」を通して自分を表現してきました。初めは誰からも全く受け入れられなくても、ボーダレスな教育とスポーツが強みとなり、相手が違いを受け入れ、チャレンジすることを応援してくれるようになりました。悩んでいると誰かが手を差し伸べ、話を聞いてくれ、アドバイスをくれたことで、私は背中を押され、前に進み、躊躇なくチャレンジし、さまざまな感動体験を得ることができました。」
                 </p>
               </div>
             </div>

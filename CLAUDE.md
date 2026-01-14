@@ -53,6 +53,10 @@ No testing framework is currently configured.
 
 **Fonts**: Noto Sans JP (Japanese), Oswald (display), Montserrat (English) - loaded in `layout.tsx`
 
+**Next.js**: Things specific to the Next.js framework
+
+- Use the Image component and all other Next js components
+
 ### Configuration Files
 
 - `tsconfig.json` - TypeScript strict mode, ES2017 target, path aliases (`@/*`)

@@ -100,8 +100,8 @@ const Mission: React.FC = () => {
               <div key={idx} className="group relative">
                 <div className="absolute inset-0 bg-slate-800 transform skew-x-[-6deg] transition-transform duration-300 group-hover:bg-brand/20 group-hover:scale-105" />
                 <div className="relative flex flex-col items-center text-center p-8 bg-slate-900 border border-slate-800 transform skew-x-[-6deg] hover:border-brand/50 transition-colors h-full justify-center shadow-lg">
-                  <div className="skew-x-[6deg]">
-                    <div className="mb-4 text-slate-500 group-hover:text-brand transition-colors duration-300">
+                  <div className="skew-x-[6deg] flex flex-col items-center">
+                    <div className="mb-4 text-slate-500 group-hover:text-brand transition-colors duration-300 flex items-center justify-center">
                       <item.icon size={36} strokeWidth={2} />
                     </div>
                     <h4 className="text-lg font-black text-white mb-1">{item.label}</h4>

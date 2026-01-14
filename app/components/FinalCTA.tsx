@@ -1,5 +1,3 @@
-import { CtaButton } from "./CtaButton";
-
 export default function FinalCTA() {
   return (
     <section className="py-32 px-4 relative overflow-hidden">
@@ -27,11 +25,16 @@ export default function FinalCTA() {
         </p>
 
         <div className="flex flex-col items-center">
-          <CtaButton
-            text="LINEで無料体験を受ける"
-            subText="特典：初回カウンセリング無料"
-            className="w-full max-w-lg"
-          />
+          <a href="#" className="block w-full max-w-md">
+            <div className="bg-[#06C755] rounded-lg p-6 text-center">
+              <p className="text-white font-bold text-lg mb-4">LINE公式アカウントはじめました</p>
+              <div className="inline-flex items-center bg-black/20 rounded-full px-6 py-2 mb-4">
+                <span className="text-white font-black text-sm mr-2">LINE</span>
+                <span className="text-white font-medium">友だち追加</span>
+              </div>
+              <p className="text-white font-bold">友達追加で無料体験案内中！</p>
+            </div>
+          </a>
         </div>
       </div>
     </section>

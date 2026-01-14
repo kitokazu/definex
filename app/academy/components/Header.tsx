@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
 import Button from './Button';
 
@@ -15,14 +16,13 @@ const Header: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: '特徴', href: '#features' },
+    { name: 'プログラムの特徴', href: '#features' },
     { name: 'プラン・料金', href: '#pricing' },
-    { name: '代表紹介', href: '#profile' },
+    { name: '講師', href: '#profile' },
     { name: 'FAQ', href: '#faq' },
   ];
 
-  // TODO: Replace with the actual URL of your uploaded DEFINE ACADEMY Logo
-  const LOGO_URL = "https://file-service-alpha.internal.based.dev/file/file-service-alpha/b3c5a8e1-5f3a-4939-a931-9a31000676a1";
+  const LOGO_URL = "/define-academy-logo.png";
 
   return (
     <header 
@@ -34,22 +34,12 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center">
           <div className="flex items-center">
             <a href="#" className="flex items-center">
-              {/* Logo Image */}
-              <img 
-                src={LOGO_URL} 
-                alt="DEFINE ACADEMY" 
-                className="h-8 md:h-10 w-auto"
-                // Fallback text if image breaks
-                onError={(e) => {
-                  e.currentTarget.style.display = 'none';
-                  const parent = e.currentTarget.parentElement;
-                  if (parent) {
-                    const textNode = document.createElement('span');
-                    textNode.className = "text-2xl font-black tracking-tight eng-font text-[#00afcc]";
-                    textNode.innerText = "DEFINE ACADEMY";
-                    parent.appendChild(textNode);
-                  }
-                }}
+              <Image
+                src={LOGO_URL}
+                alt="DEFINE ACADEMY"
+                width={200}
+                height={48}
+                className="h-10 md:h-12 w-auto"
               />
             </a>
           </div>

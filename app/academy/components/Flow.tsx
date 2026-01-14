@@ -8,7 +8,7 @@ const Flow: React.FC = () => {
       icon: Mail,
       step: "STEP 01",
       title: "無料体験申込み",
-      desc: "フォームから希望日時を選択。今の英語力や目標も簡単に入力してください。"
+      desc: "予約サイトから希望日時を選択。今の英語力や目標も簡単に入力してください。"
     },
     {
       icon: MessageSquare,
