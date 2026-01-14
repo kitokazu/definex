@@ -17,7 +17,7 @@ export default function AcademyClient() {
   return (
     <div className="min-h-screen flex flex-col font-sans bg-slate-50 text-slate-900 selection:bg-brand-primary selection:text-white">
       <Header />
-      <main className="flex-grow">
+      <main className="grow">
         <Hero />
         <TargetAudience />
         <Features />
