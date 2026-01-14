@@ -49,14 +49,9 @@ const Services: React.FC = () => {
                     <h3 className="text-3xl md:text-4xl font-bold text-white mb-6">
                       スポーツ英会話 <br />
                       <div className="mt-1">
-                        <Image
-                          src="/define-academy-logo.png"
-                          alt="DEFINE ACADEMY"
-                          width={400}
-                          height={120}
-                          className="h-20 md:h-28 w-auto"
-                          priority
-                        />
+                        <span className="text-brand italic text-4xl md:text-5xl block mt-1 tracking-tight text-shadow-glow">
+                          DEFINE ACADEMY
+                        </span>
                       </div>
                     </h3>
                     <p className="text-slate-400 text-lg leading-relaxed mb-8 font-medium">
@@ -95,16 +90,15 @@ const Services: React.FC = () => {
                     </div>
                   </div>
 
-                  <div className="relative h-72 lg:h-auto order-1 lg:order-2 overflow-hidden">
-                    <div className="absolute inset-0 bg-brand/20 mix-blend-overlay z-10 pointer-events-none" />
-                    <div className="absolute inset-0 bg-slate-950/40 z-20 group-hover:bg-transparent transition-colors duration-500"></div>
-
+                  <div className="relative h-72 lg:h-auto order-1 lg:order-2 overflow-hidden bg-slate-800 flex items-center justify-center">
                     <div className="hidden lg:block absolute inset-y-0 left-0 w-24 bg-slate-900 -skew-x-12 -translate-x-12 z-20"></div>
 
-                    <img
-                      src="https://picsum.photos/800/600?random=1"
-                      alt="Online English Learning"
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 grayscale"
+                    <Image
+                      src="/define-academy-logo.png"
+                      alt="DEFINE ACADEMY"
+                      width={400}
+                      height={120}
+                      className="w-3/4 max-w-md h-auto transition-transform duration-700 group-hover:scale-110"
                     />
                   </div>
                 </div>
@@ -120,10 +114,11 @@ const Services: React.FC = () => {
 
               <div className="relative bg-slate-900 overflow-hidden shadow-2xl shadow-black/50 border border-slate-800">
                 <div className="absolute inset-0 opacity-30 group-hover:opacity-40 transition-opacity">
-                  <img
-                    src="https://picsum.photos/800/600?random=2"
-                    alt="Sports Activity"
-                    className="w-full h-full object-cover grayscale"
+                  <Image
+                    src="/padel-court.jpg"
+                    alt="Padel Court"
+                    fill
+                    className="object-cover grayscale"
                   />
                 </div>
                 <div className="absolute inset-0 bg-grid-pattern opacity-10" />

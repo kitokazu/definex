@@ -49,7 +49,6 @@ const Profile: React.FC = () => {
               <div className="space-y-6 text-slate-700 font-medium mb-10 leading-relaxed">
                 <p>
                   幼少期より様々なスポーツに親しみ、米国IMG Academy、米国大学でのプレー経験を持つバイリンガル。
-                  自身の海外経験の中で痛感した「言葉の壁」を克服したメソッドを体系化。
                 </p>
                 
                 <div className="bg-slate-50 p-6 border-l-4 border-slate-900">
