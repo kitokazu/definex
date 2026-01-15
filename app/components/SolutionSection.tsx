@@ -10,7 +10,7 @@ const FEATURES = [
     icon: <Brain className="w-10 h-10 text-brand-primary" />,
     title: "興味があるから続く",
     desc: "教科書の例文ではなく、あなたの好きなスポーツやチームの話題が教材。だから楽しく継続できます。",
-    image: "/man-study.png",
+    image: "/study-imagine.png",
   },
   {
     icon: <MessageCircle className="w-10 h-10 text-brand-primary" />,

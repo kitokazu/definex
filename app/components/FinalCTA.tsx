@@ -25,14 +25,17 @@ export default function FinalCTA() {
         </p>
 
         <div className="flex flex-col items-center">
-          <a href="#" className="block w-full max-w-md">
-            <div className="bg-[#06C755] rounded-lg p-6 text-center">
-              <p className="text-white font-bold text-lg mb-4">LINE公式アカウントはじめました</p>
-              <div className="inline-flex items-center bg-black/20 rounded-full px-6 py-2 mb-4">
-                <span className="text-white font-black text-sm mr-2">LINE</span>
-                <span className="text-white font-medium">友だち追加</span>
+          <a href="#" className="block w-full max-w-lg transform hover:scale-105 transition-all duration-300">
+            <div className="bg-[#06C755] rounded-2xl p-8 text-center shadow-[0_0_40px_rgba(6,199,85,0.5)] border-2 border-white/20 relative overflow-hidden">
+              <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
+              <div className="relative z-10">
+                <p className="text-white font-bold text-xl mb-5">LINE公式アカウントはじめました</p>
+                <div className="inline-flex items-center bg-white rounded-full px-8 py-3 mb-5 shadow-lg">
+                  <span className="text-[#06C755] font-black text-lg mr-2">LINE</span>
+                  <span className="text-[#06C755] font-bold">友だち追加</span>
+                </div>
+                <p className="text-white font-bold text-lg">友達追加で無料体験案内中！</p>
               </div>
-              <p className="text-white font-bold">友達追加で無料体験案内中！</p>
             </div>
           </a>
         </div>
