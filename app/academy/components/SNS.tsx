@@ -10,21 +10,21 @@ const SNS: React.FC = () => {
         </h3>
 
         <div className="flex justify-center items-center gap-6 md:gap-12">
-          <a href="#" className="group flex flex-col items-center">
+          <a href="https://www.instagram.com/defineacademy.jp/" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center">
             <div className="w-20 h-20 bg-slate-800 border-2 border-slate-700 transform -skew-x-12 flex items-center justify-center group-hover:bg-[#E1306C] group-hover:border-[#E1306C] transition-all duration-300">
               <Instagram className="text-white w-8 h-8 transform skew-x-12" />
             </div>
             <span className="mt-4 text-xs font-bold text-slate-500 group-hover:text-white uppercase tracking-widest">Instagram</span>
           </a>
 
-          <a href="#" className="group flex flex-col items-center">
+          <a href="https://facebook.com/profile.php?id=61557745051495" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center">
             <div className="w-20 h-20 bg-slate-800 border-2 border-slate-700 transform -skew-x-12 flex items-center justify-center group-hover:bg-[#1877F2] group-hover:border-[#1877F2] transition-all duration-300">
               <Facebook className="text-white w-8 h-8 transform skew-x-12" />
             </div>
             <span className="mt-4 text-xs font-bold text-slate-500 group-hover:text-white uppercase tracking-widest">Facebook</span>
           </a>
 
-          <a href="#" className="group flex flex-col items-center">
+          <a href="https://lin.ee/22zZcZV" target="_blank" rel="noopener noreferrer" className="group flex flex-col items-center">
              <div className="w-20 h-20 bg-slate-800 border-2 border-slate-700 transform -skew-x-12 flex items-center justify-center group-hover:bg-[#06C755] group-hover:border-[#06C755] transition-all duration-300">
                <span className="text-white font-black text-sm transform skew-x-12">LINE</span>
              </div>

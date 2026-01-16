@@ -1,5 +1,6 @@
 "use client";
 
+import Contact from "./components/Contact";
 import CTASection from "./components/CTASection";
 import FAQ from "./components/FAQ";
 import Features from "./components/Features";
@@ -27,6 +28,7 @@ export default function AcademyClient() {
         <Profile />
         <FAQ />
         <CTASection />
+        <Contact />
         <SNS />
       </main>
       <Footer />

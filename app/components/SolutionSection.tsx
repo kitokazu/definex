@@ -124,7 +124,7 @@ export default function SolutionSection() {
               </div>
               <div className="flex-shrink-0">
                 <a
-                  href="https://line.me/"
+                  href="https://lin.ee/22zZcZV"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2 bg-brand-primary hover:bg-brand-primary/90 text-white font-bold py-4 px-8 rounded-full shadow-[0_0_20px_rgba(0,175,204,0.5)] transition-all transform hover:scale-105"

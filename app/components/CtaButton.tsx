@@ -22,7 +22,7 @@ export const CtaButton: React.FC<CtaButtonProps> = ({
         </span>
       )}
       <a
-        href="https://line.me/"
+        href="https://lin.ee/22zZcZV"
         target="_blank"
         rel="noopener noreferrer"
         className={`

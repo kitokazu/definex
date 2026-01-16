@@ -20,15 +20,15 @@ export default function LandingFooter() {
           <p className="text-xs">PR: DEFINE ACADEMY</p>
         </div>
 
-        <div className="flex gap-6 text-sm">
-          <a href="#" className="hover:text-brand-primary transition-colors">
-            Privacy Policy
+        <div className="flex flex-wrap justify-center gap-6 text-sm">
+          <a href="/terms" className="hover:text-brand-primary transition-colors">
+            利用規約
           </a>
-          <a href="#" className="hover:text-brand-primary transition-colors">
-            Terms of Service
+          <a href="/privacy" className="hover:text-brand-primary transition-colors">
+            プライバシーポリシー
           </a>
-          <a href="#" className="hover:text-brand-primary transition-colors">
-            Contact
+          <a href="/legal" className="hover:text-brand-primary transition-colors">
+            特定商取引法に基づく表記
           </a>
         </div>
 

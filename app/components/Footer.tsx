@@ -25,13 +25,13 @@ const Footer: React.FC = () => {
           </div>
 
           <div className="flex space-x-4">
-            <a href="#" className="w-11 h-11 bg-slate-800 rounded-full hover:bg-brand transition-colors duration-300 group flex items-center justify-center">
+            <a href="https://www.instagram.com/defineacademy.jp/" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-slate-800 rounded-full hover:bg-brand transition-colors duration-300 group flex items-center justify-center">
               <Instagram size={20} className="text-slate-300 group-hover:text-white" />
             </a>
-            <a href="#" className="w-11 h-11 bg-slate-800 rounded-full hover:bg-brand transition-colors duration-300 group flex items-center justify-center">
+            <a href="https://facebook.com/profile.php?id=61557745051495" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-slate-800 rounded-full hover:bg-brand transition-colors duration-300 group flex items-center justify-center">
               <Facebook size={20} className="text-slate-300 group-hover:text-white" />
             </a>
-            <a href="#" className="w-11 h-11 bg-slate-800 rounded-full hover:bg-[#06c755] transition-colors duration-300 group flex items-center justify-center">
+            <a href="https://lin.ee/22zZcZV" target="_blank" rel="noopener noreferrer" className="w-11 h-11 bg-slate-800 rounded-full hover:bg-[#06c755] transition-colors duration-300 group flex items-center justify-center">
               <span className="text-slate-300 group-hover:text-white text-xs font-bold">LINE</span>
             </a>
           </div>
@@ -39,12 +39,15 @@ const Footer: React.FC = () => {
 
         <div className="border-t border-slate-800 pt-8 flex flex-col-reverse md:flex-row justify-between items-center">
           <p className="text-slate-500 text-sm mt-4 md:mt-0">&copy; {new Date().getFullYear()} DEFINE X Inc. All rights reserved.</p>
-          <div className="flex space-x-6 text-sm text-slate-400">
-            <a href="#" className="hover:text-white transition-colors">
-              Privacy Policy
+          <div className="flex flex-wrap justify-center gap-6 text-sm text-slate-400">
+            <a href="/terms" className="hover:text-white transition-colors">
+              利用規約
             </a>
-            <a href="#" className="hover:text-white transition-colors">
-              Terms of Service
+            <a href="/privacy" className="hover:text-white transition-colors">
+              プライバシーポリシー
+            </a>
+            <a href="/legal" className="hover:text-white transition-colors">
+              特定商取引法に基づく表記
             </a>
           </div>
         </div>

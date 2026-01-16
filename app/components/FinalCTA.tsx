@@ -25,7 +25,7 @@ export default function FinalCTA() {
         </p>
 
         <div className="flex flex-col items-center">
-          <a href="#" className="block w-full max-w-lg transform hover:scale-105 transition-all duration-300">
+          <a href="https://lin.ee/22zZcZV" target="_blank" rel="noopener noreferrer" className="block w-full max-w-lg transform hover:scale-105 transition-all duration-300">
             <div className="bg-[#06C755] rounded-2xl p-8 text-center shadow-[0_0_40px_rgba(6,199,85,0.5)] border-2 border-white/20 relative overflow-hidden">
               <div className="absolute inset-0 bg-gradient-to-br from-white/10 to-transparent"></div>
               <div className="relative z-10">
