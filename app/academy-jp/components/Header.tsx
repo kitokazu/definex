@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { Menu, X } from 'lucide-react';
-import Button from './Button';
 
 const Header: React.FC = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -57,9 +56,14 @@ const Header: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            <Button variant="primary" className="!py-2 !px-6 text-sm">
+            <a
+              href="https://coubic.com/defineacademy"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-[#00afcc] text-white font-bold py-2 px-6 rounded-lg text-sm hover:bg-[#00afcc]/90 transition-colors"
+            >
               無料体験レッスン
-            </Button>
+            </a>
           </nav>
 
           {/* Mobile Menu Button */}
@@ -88,9 +92,15 @@ const Header: React.FC = () => {
                 {link.name}
               </a>
             ))}
-            <Button variant="primary" fullWidth onClick={() => setIsMobileMenuOpen(false)}>
+            <a
+              href="https://coubic.com/defineacademy"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={() => setIsMobileMenuOpen(false)}
+              className="w-full bg-[#00afcc] text-white font-bold py-3 px-6 rounded-lg text-center hover:bg-[#00afcc]/90 transition-colors"
+            >
               無料体験レッスン
-            </Button>
+            </a>
           </div>
         </div>
       )}

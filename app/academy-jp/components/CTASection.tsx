@@ -1,5 +1,4 @@
 import React from "react";
-import Button from "./Button";
 
 const CTASection: React.FC = () => {
   return (
@@ -16,12 +15,14 @@ const CTASection: React.FC = () => {
           <br />
           まずは無料体験で、その一歩を踏み出しませんか？
         </p>
-        <Button
-          variant="white"
-          className="text-xl py-4 px-10 shadow-2xl hover:scale-105 transform transition-transform"
+        <a
+          href="https://coubic.com/defineacademy"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-white text-[#00afcc] font-bold text-xl py-4 px-10 rounded-lg shadow-2xl hover:scale-105 transform transition-transform"
         >
           無料体験レッスンに申し込む
-        </Button>
+        </a>
       </div>
     </section>
   );

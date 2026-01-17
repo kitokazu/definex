@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
               className="flex flex-col sm:flex-row gap-6 pt-6"
             >
               <a
-                href="#services-academy"
+                href="/academy-jp"
                 className="group relative px-8 py-5 bg-brand text-slate-950 font-black overflow-hidden skew-x-[-12deg] transition-all duration-300 hover:shadow-[0_0_20px_rgba(0,175,204,0.4)] hover:-translate-y-1"
               >
                 <div className="absolute inset-0 w-full h-full bg-white scale-x-0 group-hover:scale-x-100 transition-transform origin-left duration-300" />

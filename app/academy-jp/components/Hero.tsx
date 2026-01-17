@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import Button from "./Button";
 import { ArrowRight, Zap } from "lucide-react";
 
 const Hero: React.FC = () => {
@@ -60,11 +59,15 @@ const Hero: React.FC = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-6">
-              <Button variant="primary" className="group text-lg px-10">
+              <a
+                href="https://coubic.com/defineacademy"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group inline-flex items-center bg-[#00afcc] text-white font-bold text-lg py-3 px-10 rounded-lg hover:bg-[#00afcc]/90 transition-colors"
+              >
                 無料体験に申し込む
                 <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-              </Button>
-              <Button variant="outline">詳しく見る</Button>
+              </a>
             </div>
           </div>
 

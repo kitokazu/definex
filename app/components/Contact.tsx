@@ -12,15 +12,33 @@ const Contact: React.FC = () => {
     message: "",
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<"idle" | "success" | "error">("idle");
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    setTimeout(() => {
-      alert("お問い合わせありがとうございます。担当者よりご連絡いたします。");
+    setSubmitStatus("idle");
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formState),
+      });
+
+      if (response.ok) {
+        setSubmitStatus("success");
+        setFormState({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setSubmitStatus("error");
+      }
+    } catch {
+      setSubmitStatus("error");
+    } finally {
       setIsSubmitting(false);
-      setFormState({ name: "", email: "", subject: "", message: "" });
-    }, 1500);
+    }
   };
 
   const handleChange = (
@@ -136,6 +154,16 @@ const Contact: React.FC = () => {
                     placeholder="ご自由にご記入ください"
                   />
                 </div>
+                {submitStatus === "success" && (
+                  <div className="p-4 bg-green-500/20 border border-green-500/50 rounded-lg text-green-400 text-sm">
+                    お問い合わせありがとうございます。担当者よりご連絡いたします。
+                  </div>
+                )}
+                {submitStatus === "error" && (
+                  <div className="p-4 bg-red-500/20 border border-red-500/50 rounded-lg text-red-400 text-sm">
+                    送信に失敗しました。時間をおいて再度お試しください。
+                  </div>
+                )}
                 <button
                   type="submit"
                   disabled={isSubmitting}

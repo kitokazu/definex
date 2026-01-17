@@ -1,6 +1,5 @@
 import React from 'react';
 import SectionHeading from './SectionHeading';
-import Button from './Button';
 import { Check } from 'lucide-react';
 
 const Pricing: React.FC = () => {
@@ -10,7 +9,8 @@ const Pricing: React.FC = () => {
       monthlyPrice: "8,800",
       times: "月2回",
       desc: "まずは気軽に始めたい方へ",
-      features: ["1セッション: 30分", "完全個別カリキュラム", "毎回のフィードバック", "無制限LINEチャットサポート"]
+      features: ["1セッション: 30分", "完全個別カリキュラム", "毎回のフィードバック", "無制限LINEチャットサポート"],
+      link: "https://coubic.com/defineacademy/products/503078#pageContent"
     },
     {
       name: "Standard",
@@ -18,14 +18,16 @@ const Pricing: React.FC = () => {
       times: "月4回",
       recommended: true,
       desc: "着実に力をつけたい推奨プラン",
-      features: ["1セッション: 30分", "完全個別カリキュラム", "毎回のフィードバック", "無制限LINEチャットサポート"]
+      features: ["1セッション: 30分", "完全個別カリキュラム", "毎回のフィードバック", "無制限LINEチャットサポート"],
+      link: "https://coubic.com/defineacademy/products/501735#pageContent"
     },
     {
       name: "Athlete Pro",
       monthlyPrice: "35,200",
       times: "月8回",
       desc: "短期間で飛躍的に伸ばす",
-      features: ["1セッション: 30分", "完全個別カリキュラム", "毎回のフィードバック", "無制限LINEチャットサポート"]
+      features: ["1セッション: 30分", "完全個別カリキュラム", "毎回のフィードバック", "無制限LINEチャットサポート"],
+      link: "https://coubic.com/defineacademy/products/106741#pageContent"
     }
   ];
 
@@ -84,13 +86,18 @@ const Pricing: React.FC = () => {
               </div>
 
               <div className="p-8 pt-0 mt-auto">
-                <Button 
-                  variant={plan.recommended ? 'primary' : 'white'} 
-                  fullWidth
-                  className={!plan.recommended ? '!bg-slate-700 !text-white !border-slate-600 hover:!bg-slate-600' : ''}
+                <a
+                  href={plan.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`block w-full text-center font-bold py-3 px-6 rounded-lg transition-colors ${
+                    plan.recommended
+                      ? 'bg-[#00afcc] text-white hover:bg-[#00afcc]/90'
+                      : 'bg-slate-700 text-white border border-slate-600 hover:bg-slate-600'
+                  }`}
                 >
                   SELECT PLAN
-                </Button>
+                </a>
               </div>
             </div>
           ))}
@@ -105,9 +112,14 @@ const Pricing: React.FC = () => {
               <p className="text-3xl font-black">120,000円 <span className="text-base font-normal text-slate-500">(税込)</span></p>
               <p className="text-slate-600">30回券 3ヵ月有効</p>
             </div>
-            <Button variant="primary" className="!px-8">
+            <a
+              href="https://coubic.com/defineacademy/products/138420#pageContent"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-[#00afcc] text-white font-bold py-3 px-8 rounded-lg hover:bg-[#00afcc]/90 transition-colors"
+            >
               申し込みはこちら →
-            </Button>
+            </a>
           </div>
         </div>
 
@@ -127,9 +139,12 @@ const Pricing: React.FC = () => {
               <h4 className="font-black italic text-xl">TEAM / CORPORATE</h4>
               <p className="text-sm text-cyan-100 font-bold">団体・法人利用はこちら</p>
             </div>
-            <Button variant="white" className="!py-2 !px-6 text-sm">
+            <a
+              href="#contact"
+              className="bg-white text-[#00afcc] font-bold py-2 px-6 text-sm rounded-lg hover:bg-slate-100 transition-colors"
+            >
               お問い合わせ
-            </Button>
+            </a>
           </div>
         </div>
 
