@@ -78,7 +78,7 @@ const Services: React.FC = () => {
                     </div>
 
                     <div>
-                      <a href="/academy-jp" className="inline-flex items-center px-8 py-4 bg-white text-slate-950 font-bold skew-x-[-12deg] hover:bg-brand hover:text-white transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,175,204,0.6)] hover:-translate-y-1 group/btn">
+                      <a href="/academy-jp" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-4 bg-white text-slate-950 font-bold skew-x-[-12deg] hover:bg-brand hover:text-white transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,175,204,0.6)] hover:-translate-y-1 group/btn">
                         <span className="skew-x-[12deg] flex items-center">
                           公式サイトを見る
                           <ArrowUpRight
