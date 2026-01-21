@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
         Authorization: `Bearer ${resendApiKey}`,
       },
       body: JSON.stringify({
-        from: "DEFINE X Contact Form <onboarding@resend.dev>",
+        from: "DEFINE X <noreply@definex.jp>",
         to: "info@definex.jp",
         subject: subject || `お問い合わせ: ${name}様より`,
         reply_to: email,
@@ -55,6 +55,27 @@ export async function POST(request: NextRequest) {
         { status: 500 }
       );
     }
+
+    // Send auto-reply to the user
+    await fetch("https://api.resend.com/emails", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${resendApiKey}`,
+      },
+      body: JSON.stringify({
+        from: "DEFINE X <noreply@definex.jp>",
+        to: email,
+        subject: "【DEFINE X】お問い合わせを受け付けました",
+        html: `
+          <p>お問い合わせを受け付けました。</p>
+          <p>担当者より <strong>48時間以内</strong> にご返信いたします。</p>
+          <p>恐れ入りますが、しばらくお待ちくださいますようお願いいたします。</p>
+          <p>─────────────</p>
+          <p>DEFINEX株式会社</p>
+        `,
+      }),
+    });
 
     return NextResponse.json({ success: true });
   } catch (error) {
