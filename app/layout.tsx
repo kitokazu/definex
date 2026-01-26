@@ -28,6 +28,10 @@ export const metadata: Metadata = {
   title: "DEFINE X - Corporate Site",
   description:
     "Official corporate website for DEFINE X Inc., focusing on Sports and Academy businesses.",
+  icons: {
+    icon: "/main-logo.png",
+    apple: "/main-logo.png",
+  },
 };
 
 export default function RootLayout({
