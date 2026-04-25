@@ -135,7 +135,7 @@ const Services: React.FC = () => {
                   </h3>
                   <div className="w-24 h-2 bg-brand mb-8 skew-x-[-20deg] shadow-[0_0_10px_#00AFCC]"></div>
                   <p className="text-slate-300 text-lg md:text-xl max-w-2xl mb-12 font-bold leading-relaxed">
-                    意味のある繋がりを。
+                    パデルを通じて、意味のある繋がりを
                   </p>
 
                   <a
