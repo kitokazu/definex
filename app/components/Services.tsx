@@ -78,7 +78,12 @@ const Services: React.FC = () => {
                     </div>
 
                     <div>
-                      <a href="/academy-jp" target="_blank" rel="noopener noreferrer" className="inline-flex items-center px-8 py-4 bg-white text-slate-950 font-bold skew-x-[-12deg] hover:bg-brand hover:text-white transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,175,204,0.6)] hover:-translate-y-1 group/btn">
+                      <a
+                        href="/academy-jp"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center px-8 py-4 bg-white text-slate-950 font-bold skew-x-[-12deg] hover:bg-brand hover:text-white transition-all duration-300 hover:shadow-[0_0_15px_rgba(0,175,204,0.6)] hover:-translate-y-1 group/btn"
+                      >
                         <span className="skew-x-[12deg] flex items-center">
                           公式サイトを見る
                           <ArrowUpRight
@@ -130,10 +135,15 @@ const Services: React.FC = () => {
                   </h3>
                   <div className="w-24 h-2 bg-brand mb-8 skew-x-[-20deg] shadow-[0_0_10px_#00AFCC]"></div>
                   <p className="text-slate-300 text-lg md:text-xl max-w-2xl mb-12 font-bold leading-relaxed">
-                    パデルを通じて、趣味のあるつながりを。
+                    意味のある繋がりを。
                   </p>
 
-                  <a href="https://enpadel.com" target="_blank" rel="noopener noreferrer" className="inline-block transition-transform duration-300 hover:-translate-y-1 hover:drop-shadow-[0_0_15px_rgba(0,175,204,0.6)]">
+                  <a
+                    href="https://enpadel.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block transition-transform duration-300 hover:-translate-y-1 hover:drop-shadow-[0_0_15px_rgba(0,175,204,0.6)]"
+                  >
                     <Image
                       src="/enpadel-logo.png"
                       alt="enpadel"
