@@ -1,5 +1,5 @@
 import React from "react";
-import { Activity, ArrowUpRight, Lock } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 import FadeIn from "./FadeIn";
 
@@ -115,8 +115,8 @@ const Services: React.FC = () => {
               <div className="relative bg-slate-900 overflow-hidden shadow-2xl shadow-black/50 border border-slate-800">
                 <div className="absolute inset-0 opacity-30 group-hover:opacity-40 transition-opacity">
                   <Image
-                    src="/padel-court.jpg"
-                    alt="Padel Court"
+                    src="/enpadel-background.jpg"
+                    alt="enpadel"
                     fill
                     className="object-cover grayscale"
                   />
@@ -125,32 +125,23 @@ const Services: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-slate-950/95 to-slate-900/60" />
 
                 <div className="relative z-10 p-12 md:p-20 flex flex-col items-center text-center">
-                  <div className="mb-6 inline-flex items-center space-x-2 px-4 py-1 border border-brand/50 rounded-full bg-brand/10 backdrop-blur-sm">
-                    <Activity size={16} className="text-brand" />
-                    <span className="text-brand text-xs font-bold tracking-widest uppercase">
-                      Coming Soon
-                    </span>
-                  </div>
-
                   <h3 className="text-5xl md:text-7xl font-black text-white mb-6 italic tracking-tighter drop-shadow-md">
                     SPORTS BUSINESS
                   </h3>
                   <div className="w-24 h-2 bg-brand mb-8 skew-x-[-20deg] shadow-[0_0_10px_#00AFCC]"></div>
                   <p className="text-slate-300 text-lg md:text-xl max-w-2xl mb-12 font-bold leading-relaxed">
-                    ハイレベルなスポーツアクティビティの提供を通じて、
-                    <br />
-                    ボーダレスなコミュニティを創造します。
+                    パデルを通じて、趣味のあるつながりを。
                   </p>
 
-                  <div className="inline-flex items-center px-10 py-4 border-2 border-white/10 text-slate-400 skew-x-[-12deg] relative overflow-hidden group/btn cursor-not-allowed bg-black/20">
-                    <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')] opacity-20"></div>
-                    <div className="skew-x-[12deg] flex items-center relative z-10">
-                      <Lock size={18} className="mr-3 text-slate-500" />
-                      <span className="font-black tracking-widest text-lg">
-                        UNDER CONSTRUCTION
-                      </span>
-                    </div>
-                  </div>
+                  <a href="https://enpadel.com" target="_blank" rel="noopener noreferrer" className="inline-block transition-transform duration-300 hover:-translate-y-1 hover:drop-shadow-[0_0_15px_rgba(0,175,204,0.6)]">
+                    <Image
+                      src="/enpadel-logo.png"
+                      alt="enpadel"
+                      width={180}
+                      height={60}
+                      className="h-auto"
+                    />
+                  </a>
                 </div>
               </div>
             </FadeIn>
